@@ -1,14 +1,109 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Codificador</title>
+</head>
+<body>
+    <header class="header">
+        <div class="barra">
+            <div class="logo-cuadro">
+                <h1 class="logo-nombre">LO <span>GO</span></h1>
+            </div>
+            <nav class="navegacion">
+                <a href="#" class="navegacion__enlace">Mensajes</a>
+                <a href="index.html" class="navegacion__enlace">Cipher</a>
+                <a href="#" class="navegacion__enlace">Agenda</a>
+                <a href="#" class="navegacion__enlace">User.1234</a>
+            </nav>
+        </div>
+    </header>
+    <div id="cipher_vista">
+            <div class="cipher_tarjeta">
+                <div class="cipher__tarjeta_titulo">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="cipher-icono" width="50" height="50" viewBox="0 0 24 24" stroke-width="2" stroke="#202020" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+                        <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+                    </svg>
+                    <h2 class="tarjeta_titulo">CIFRADO</h2>
+                </div>
+                <div class="cipher__tarjeta_fondo">
+                    <canvas class="rectangulo-naranja"></canvas>
+                    <canvas class="rectangulo-blanco"></canvas>
+                </div>
+            </div>
+            <div class="cipher_tarjeta2">
+                <div class="cipher__tarjeta_titulo">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="cipher-icono" width="50" height="50" viewBox="0 0 24 24" stroke-width="2" stroke="#202020" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+                        <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+                    </svg>
+                    <h2 class="tarjeta_titulo">DESCIFRADO</h2>
+                </div>
+                <div class="cipher__tarjeta_fondo">
+                    <canvas class="rectangulo-naranja"></canvas>
+                    <canvas class="rectangulo-blanco"></canvas>
+                </div>
+            </div>
     </div>
+    <div id="codificador">
+        <main class="contenedor">
+            <h2 class="titulo">Cifrado</h2>
+            <div class="contenedor-cifrados">
+                <h4>A continuación ingrese el texto a codificar</h4>
+                <textarea placeholder="Lorem Ipsum" id="texto" cols="143" rows="8"></textarea>
+                <div class="desplazamiento-modulo">
+                    <p>Desplazamientos</p>
+                    <input type="number" id="numIndex" placeholder="Digita un número">
+                    <button id="cifrado">Cifrar</button>
+                </div>
+            </div>
+            <div class="contenedor-cifrados">
+                <h3>Mensaje cifrado:</h3>
+                <div id="resultado-final"></div>
+                <div class="limpiar-btn">
+                    <button id="limpiar">Limpiar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="decodificador">
+        <main class="contenedor">
+            <h2 class="titulo">Descifrado</h2>
+            <div class="contenedor-cifrados">
+                <h4>A continuación ingrese el mensaje que desea conocer</h4>
+                <textarea placeholder="Lorem Ipsum" id="texto2" cols="143" rows="8"></textarea>
+                <div class="desplazamiento-modulo">
+                    <p>Desplazamientos que le fueron dados</p>
+                    <input type="number" id="numIndex2" placeholder="Digita un número">
+                    <button id="cifrado2">Descifrar</button>
+                </div>
+            </div>
+            <div class="contenedor-cifrados">
+                <h3>Mensaje procesado:</h3>
+                <div id="resultado-final2"></div>
+                <div class="limpiar-btn">
+                    <button id="limpiar2">Limpiar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="linea"></div>
+        <div class="footer">
+            <a href="#" class="navegacion__enlace">Log Out</a>
+            <a href="#" class="navegacion__enlace">Support</a>
+        </div>
+    </footer>
+
     <script src="index.js" type="module"></script>
-  </body>
+</body>
 </html>
