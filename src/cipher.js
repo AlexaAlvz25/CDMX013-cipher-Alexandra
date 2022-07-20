@@ -7,12 +7,8 @@ const cipher = {
         
         //Convertimos el valor string a number de el parametro offset
         let numIndex = parseInt(offset);
-        
-        //Creamos un nuevo TypeError en caso que el usuario ingresé valores nulos
-        if(offset == '' && texto == '' || offset == 0 && texto == 0 || offset == null && texto == []) {
-            return new Error('Los datos ingresados deben ser validos');
-        }
-
+        console.log(offset)
+        console.log(texto)
         //Declaramos una variable vacia que contenga los nuevos valores
         let textoFinal = '';
 
