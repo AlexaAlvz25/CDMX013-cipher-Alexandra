@@ -36,7 +36,7 @@ sin embargo con modificaciones que harán de su información más segura.
 
 ## 2. Resumen del proyecto
 
-**INSERTAR IMAGEN1 AQUI
+![Imagen1](https://user-images.githubusercontent.com/104030163/179890761-6a22e4ba-bfe0-498d-aa78-44c774c33a47.jpg)
 
 Realizar una aplicación web que  servirá para que el usuario (directivo) pueda cifrar
 y descifrar un texto, indicando un desplazamiento específico de caracteres (offset).
@@ -61,13 +61,13 @@ por otra letra que se encuentra un número fijo de posiciones más adelante en e
 alfabeto. Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la
 D (situada 3 lugares a la derecha de la A ), la B sería reemplazada por la E, etc.
 
-**INSERTAR IMAGEN2
+![Imagen2](https://user-images.githubusercontent.com/104030163/179890810-972183a4-65b8-480b-ba3e-79595e8bf803.png)
 
 La codificación se puede representar usando una formula aritmética, transformando
 las letras en números, de acuerdo a su valor en el Código Estadounidense Estándar
 para el Intercambio de Información (ASCII).
 
-**INSERTAR IMAGEN3
+![Imagen3](https://user-images.githubusercontent.com/104030163/179890834-fd9b22f5-c5fd-4478-9753-e2731bd085f9.png)
 
 A partir de lo anterior, podemos definir que contamos con dos parámetros que
 serán ingresados por el usuario. El texto/palabra y el número de desplazamientos
@@ -115,7 +115,7 @@ Let codigoLetraNueva = ( x – 65 + n ) % 26 + 65; // 72
 Let letraNueva = String.fromCharCode(codigoLetraNueva);
 Console.log ( letraNueva ); // H
 
-**INSERTAR IMAGEN4
+![Imagen4](https://user-images.githubusercontent.com/104030163/179890928-4643d143-19bc-451d-b02d-0269a5e0659e.png)
 
 
 ## 4. Definición del Producto
@@ -142,8 +142,8 @@ desplazamientoss para su transformación.
 Los colores son de acuerdo a la imagen de la empresa, con una imagen de la CDMX,
 donde se encuentra su sede.
 
-**INSERTAR IMAGEN5
-**INSERTAR IMAGEN6
+![Imagen5](https://user-images.githubusercontent.com/104030163/179890979-2915f848-3c4a-4961-bf18-690494f9da58.png)
+![Imagen6](https://user-images.githubusercontent.com/104030163/179890983-bad746a6-2de4-4600-86f6-93ded913a254.png)
 
 
 ## 6. Checklist
