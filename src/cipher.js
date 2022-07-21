@@ -5,10 +5,11 @@ const cipher = {
     //Función que recibe dos parametros: offset (desplazamientos) y string (texto o palabra)
     encode (offset, texto) {
         
+        if(offset == '') throw(TypeError('Ingrese un número válido'));
+        if(offset == null) throw(TypeError('Coloca un número'));
+
         //Convertimos el valor string a number de el parametro offset
         let numIndex = parseInt(offset);
-        console.log(offset)
-        console.log(texto)
         //Declaramos una variable vacia que contenga los nuevos valores
         let textoFinal = '';
 
@@ -50,6 +51,9 @@ const cipher = {
     //Función que recibe dos parametros: offset (desplazamientos) y string (texto o palabra)
     decode (offset, texto) {
 
+        if(offset == '') throw(TypeError('Ingrese un número válido'));
+        if(offset == null) throw(TypeError('Coloca un número'));
+        
         //Convertimos el valor string a number de el parametro offset
        let numIndex = parseInt(offset);
         
