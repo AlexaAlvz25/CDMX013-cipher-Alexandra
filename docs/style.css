@@ -1,0 +1,211 @@
+/** PROPIEDADES PERSONALIZADAS **/
+
+:root{
+    --fuentePrincipal: 'Inter', sans-serif;
+
+    --amarillo: #ffca08;
+    --cafe: #3d190f;
+    --blanco: #ffffff;
+    --negro: #202020;
+    --naranja: #EC7016;
+    --rojo: #E64823;
+}
+
+
+/** AJUSTES GENERALES DEL CONTENIDO **/
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    background-image: url('./img/atardecer-principal1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+}
+
+h1, h2, h3, a, button {
+    font-family: var(--fuentePrincipal);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--blanco);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 4rem;
+}
+h4{
+    font-weight: 400;
+    color: var(--blanco);
+    text-shadow: 1rem 0 1rem #000000;
+    margin-left: 2rem;
+}
+p{
+    font-weight: 400;
+    color: var(--blanco);
+    text-shadow: 1rem 0 1rem #000000;
+}
+
+
+/** HEADER  **/
+
+.header{
+    padding: 3rem 6rem 2rem 6rem;
+}
+.barra{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+}
+.logo-nombre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2.8rem;
+    margin: .8rem;
+}
+.logo-cuadro{
+    border: .4rem solid var(--blanco);
+}
+.navegacion__enlace{
+    margin-left: 3rem;
+    text-decoration: none;
+}
+.navegacion__enlace:hover{
+    text-decoration: underline;
+}
+
+
+/** FOOTER  **/
+
+.linea{
+    background-color: var(--blanco);
+    border: .3rem solid var(--blanco);
+    border-radius: 1rem;
+    opacity: 80%;
+    max-width: 120rem;
+    margin: 0 18rem;
+}
+.footer{
+    margin: 2rem 0 2rem 5rem;
+}
+
+
+/** VISTA - SELECCIÓN DE CATEGORÍA **/
+
+#codificador, #decodificador{
+    display: none;
+}
+#cipher_vista{
+    display: flex;
+    max-width: 90rem;
+    max-height: 30rem;
+    padding: 8rem;
+    margin: auto;
+}
+.cipher_tarjeta, .cipher_tarjeta2{
+    margin-right: 5rem;
+}
+.tarjeta_titulo, .tarjeta_titulo2{
+    position: relative;
+    font-size: 4rem;
+    color: var(--negro);
+    margin-left: 8rem;
+    margin-bottom: -10.5rem;
+    z-index: 1;
+}
+.tarjeta_titulo:hover, .tarjeta_titulo2:hover{
+    color: var(--rojo);
+    cursor: pointer;
+}
+.cipher-icono{
+    margin-bottom: -8.5rem;
+    margin-left: 3rem;
+    position: relative;
+    z-index: 2;
+}
+.cipher__tarjeta_fondo{
+    justify-content: center;
+    align-items: center;
+}
+.rectangulo-naranja{
+    width: 1rem;
+    height: 12rem;
+    background: #EC7016;
+    margin-bottom: -12.4rem;
+}
+.rectangulo-blanco{
+    position: relative;
+    width: 35rem;
+    height: 12rem;
+    background: #FFFFFF;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: 1rem;
+}
+
+
+/** VISTA - CIFRADO  **/
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    max-width: auto;
+    padding: 0 18rem;
+}
+.titulo{
+    margin: 2rem 0 -.5rem 0;
+}
+
+.contenedor-cifrados{
+    padding: 0 4rem;
+}
+#texto, #resultado-final, #texto2, #resultado-final2{
+    border-radius: 1.5rem;
+}
+#resultado-final, #resultado-final2{
+    max-width: 100%;
+    height: auto;
+    background-color: var(--blanco);
+}
+.desplazamiento-modulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5rem;
+}
+#numIndex, #numIndex2{
+    margin: 0 1rem;
+    border-radius: 1rem;
+    border: none;
+    height: 3rem;
+}
+#cifrado2{
+    margin-left: 2rem;
+}
+#cifrado, #cifrado2, #limpiar, #limpiar2{
+    border-radius: 1rem;
+    border: none;
+    height: 3rem;
+    width: 10rem;
+    background-color: var(--naranja);
+}
+#cifrado:hover, #cifrado2:hover, #limpiar:hover, #limpiar2:hover{
+    cursor: pointer;
+    background-color: var(--rojo);
+}
+.limpiar-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 1rem 2rem 2rem 0;
+}
